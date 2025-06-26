@@ -1,0 +1,8 @@
+pandas
+numpy
+nltk
+joblib
+pillow
+pytesseract
+streamlit
+scikit-learn
