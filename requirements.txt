@@ -9,6 +9,7 @@ colorama==0.4.6
 Flask==3.1.1
 gitdb==4.0.12
 GitPython==3.1.44
+gunicorn==23.0.0
 idna==3.10
 imbalanced-learn==0.13.0
 itsdangerous==2.2.0
