@@ -20,12 +20,31 @@ if platform.system() == 'Windows':
     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
+nltk.download('punkt')  # Make sure it's available locally
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', download_dir='nltk_data')
 
-# nltk.download('punkt', download_dir='nltk_data')
-# nltk.download('stopwords', download_dir='nltk_data')
-# nltk.download('wordnet', download_dir='nltk_data')
-# nltk.download('omw-1.4', download_dir='nltk_data')
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords', download_dir='nltk_data')
+
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet', download_dir='nltk_data')
+
+try:
+    nltk.data.find('corpora/omw-1.4')
+except LookupError:
+    nltk.download('omw-1.4', download_dir='nltk_data')
+
 
 
 # 🌐 Flask App Setup
