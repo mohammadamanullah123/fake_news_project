@@ -17,5 +17,4 @@ __pycache__/
 # Model/data files (optional)
 *.pkl
 
-# NLTK data (optional, include only if not needed in Git)
-nltk_data/
+
