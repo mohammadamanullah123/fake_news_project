@@ -22,7 +22,6 @@ if platform.system() == 'Windows':
 # 👉 Append your local offline nltk_data path
 NLTK_DATA_PATH = os.path.join(os.path.dirname(__file__), "nltk_data")
 nltk.data.path.append(NLTK_DATA_PATH)
-
 # 🔐 Try loading all required resources from local path
 try:
     nltk.data.find('tokenizers/punkt')
