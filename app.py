@@ -22,6 +22,12 @@ if platform.system() == 'Windows':
 nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
 
 
+# nltk.download('punkt', download_dir='nltk_data')
+# nltk.download('stopwords', download_dir='nltk_data')
+# nltk.download('wordnet', download_dir='nltk_data')
+# nltk.download('omw-1.4', download_dir='nltk_data')
+
+
 # 🌐 Flask App Setup
 app = Flask(__name__)
 app.secret_key = 'secret123'
